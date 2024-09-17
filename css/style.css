@@ -14,8 +14,8 @@ body{
     height: 100vh;
 }
 
-section{
-    padding: 1.5rem 0rem;
+section:not(#menu){
+    padding: 1rem 0rem;
 }
 /* #endregion common */
 
@@ -59,6 +59,18 @@ section{
 
 [class^="col-"]{
     padding: 1rem;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.fw-wrap{
+    flex-wrap: wrap;
 }
 /* #endregion utilities */
 
@@ -287,6 +299,22 @@ section{
 
     #menu{
         text-align: center;
+
+        ul{
+            list-style: none;
+
+            li{
+                padding-left: 1.5rem;
+                padding-top: 0.75rem;
+            }
+
+            a{
+                text-decoration: none;
+                color: var(--spo-secondary);
+                font-size: .65rem;
+                font-weight: 600;
+            }
+        }
     }
 }
 /* #endregion main */
@@ -296,6 +324,11 @@ section{
     
     .col-md-3{
         width: calc((100% / 12) * 3);
+    }
+
+    .container-md{
+        width: 55%;
+        margin: auto;
     }
 }
 

@@ -22,8 +22,8 @@
 }
 
 .top{
-    background-color: violet;
     height: calc(100% - 90px);
+    display: flex;
 }
 
 .bottom{
@@ -34,6 +34,18 @@
 .sidebar{
     background-color: aliceblue;
     width: 230px;
-    height: 100%;
+
+    @media (max-width:600px) {
+        width: 50px;
+    }
+}
+
+.content{
+    background-color: brown;
+    width: calc(100% - 230px);
+
+    @media (max-width:600px) {
+        width: calc(100% - 50px);
+    }
 }
 /* #endregion main */

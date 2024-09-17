@@ -185,7 +185,7 @@ section{
 
             span{
                 vertical-align: middle;
-                font-size: 0.9rem;
+                font-size: 0.75rem;
             }
         }
 
@@ -260,8 +260,29 @@ section{
 
     #upgrade{
         height: 90px;
-        text-align: end;
         background-color: var(--spo-bg-secondary);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+
+        a{
+            text-decoration: none;
+            color: var(--spo-light);
+            font-size: .75rem;
+            margin-right: 1rem;
+            border: 1px solid white;
+            padding: .75rem 2rem;
+            border-radius: 3rem;
+        }
+
+        .grow{
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover{
+            transform: scale(1.1);
+        }
     }
 
     #menu{

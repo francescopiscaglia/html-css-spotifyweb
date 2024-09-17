@@ -87,17 +87,40 @@ section{
         width: 50px;
     }
 
-    .logo{
+    .logo-big{
         margin-top: 1rem;
 
         img{
             width: 80%;
+        }
+
+        @media (max-width:600px) {
+            display: none;
+        }
+    }
+
+    .logo-small{
+        margin-top: 1rem;
+        display: none;
+
+        @media (max-width:600px) {
+            display: block;
+            text-align: center;
+        }
+
+        img{
+            width: 60%;
         }
     }
 
     #navbar{
         color: var(--spo-sidebar-text);
         margin-top: 1.5rem;
+
+        @media (max-width:600px) {
+            text-align: center;
+        }
+        
 
         ul{
             list-style: none;
@@ -115,8 +138,21 @@ section{
             i{
                 font-size: 1.25rem;
                 margin-right: .5rem;
+
+                @media (max-width:600px) {
+                    margin: 0;
+                }
             }
         }
+
+        span{
+
+            @media (max-width:600px) {
+                display: none;
+            }
+        }
+
+
     }
 }
 

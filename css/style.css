@@ -16,7 +16,15 @@ section{
 /* #endregion common */
 
 /* #region color palette */
-
+:root{
+    --spo-bg-primary: #141922;
+    --spo-bg-secondary: #080b12;
+    --spo-bg-sidebar: #000000;
+    --spo-light: #f2f2f3;
+    --spo-lighter: #ffffff;
+    --spo-secondary: #7c7e83;
+    --spo-footer-bg: #282828;
+}
 /* #endregion color palette */
 
 /* #region utilities */
@@ -47,6 +55,7 @@ section{
 /* #region main */
 #app-main{
     height: 100%;
+    color: white;
 }
 
 .top{
@@ -55,13 +64,13 @@ section{
 }
 
 .bottom{
-    background-color: greenyellow;
     height: 90px;
+    background-color: var(--spo-footer-bg);
 }
 
 .sidebar{
-    background-color: aliceblue;
     width: 230px;
+    background-color: var(--spo-bg-sidebar);
 
     @media (max-width:600px) {
         width: 50px;
@@ -69,9 +78,9 @@ section{
 }
 
 .content{
-    background-color: brown;
     width: calc(100% - 230px);
     overflow-y: auto;
+    background-color: var(--spo-bg-primary);
 
     @media (max-width:600px) {
         width: calc(100% - 50px);
@@ -79,12 +88,11 @@ section{
 
     #upgrade{
         height: 90px;
-        background-color: aquamarine;
         text-align: end;
+        background-color: var(--spo-bg-secondary);
     }
 
     #menu{
-        background-color: goldenrod;
         text-align: center;
     }
 }

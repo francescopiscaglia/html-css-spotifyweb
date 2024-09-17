@@ -29,6 +29,7 @@ section:not(#menu){
     --spo-secondary: #7c7e83;
     --spo-footer-bg: #282828;
     --spo-sidebar-text: #a3a3a3;
+    --spo-border-hover: #adff2f;
 }
 /* #endregion color palette */
 
@@ -306,6 +307,13 @@ section:not(#menu){
             li{
                 padding-left: 1.5rem;
                 padding-top: 0.75rem;
+
+                hr{
+                    border: 1px solid var(--spo-border-hover);
+                    width: 30%;
+                    margin: auto;
+                    margin-top: .2rem;
+                }
             }
 
             a{
@@ -314,6 +322,10 @@ section:not(#menu){
                 font-size: .65rem;
                 font-weight: 600;
             }
+        }
+
+        li:hover a{
+            color: var(--spo-lighter);
         }
     }
 }

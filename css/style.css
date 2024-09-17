@@ -7,6 +7,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+section{
+    padding: 1.5rem 0rem;
 }
 /* #endregion common */
 
@@ -41,7 +46,7 @@ body{
 
 /* #region main */
 #app-main{
-    height: 100vh;
+    height: 100%;
 }
 
 .top{
@@ -66,6 +71,7 @@ body{
 .content{
     background-color: brown;
     width: calc(100% - 230px);
+    overflow-y: auto;
 
     @media (max-width:600px) {
         width: calc(100% - 50px);
@@ -81,7 +87,6 @@ body{
         background-color: goldenrod;
         text-align: center;
     }
-
 }
 /* #endregion main */
 

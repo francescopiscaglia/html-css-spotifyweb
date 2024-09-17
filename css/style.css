@@ -38,6 +38,16 @@ section:not(#menu){
     border: 1px dashed;
 }
 
+.top{
+    height: calc(100% - 90px);
+    display: flex;
+}
+
+.bottom{
+    height: 90px;
+    background-color: var(--spo-footer-bg);
+}
+
 .container{
     width: 97%;
     margin: auto;
@@ -78,17 +88,6 @@ section:not(#menu){
 /* #region main */
 #app-main{
     height: 100%;
-    color: white;
-}
-
-.top{
-    height: calc(100% - 90px);
-    display: flex;
-}
-
-.bottom{
-    height: 90px;
-    background-color: var(--spo-footer-bg);
 }
 
 .sidebar{
@@ -111,7 +110,6 @@ section:not(#menu){
 
     a{
         text-decoration: none;
-        font-weight: 600;
         color: var(--spo-sidebar-text);
         font-size: .6rem;
 
@@ -129,7 +127,7 @@ section:not(#menu){
         margin-top: .75rem;
 
         img{
-            width: 80%;
+            width: 50%;
         }
 
         @media (max-width:600px) {
@@ -190,20 +188,20 @@ section:not(#menu){
             i{
                 background-color: var(--spo-sidebar-text);
                 color: var(--spo-bg-sidebar);
-                padding: .65rem;
-                font-size: 1.25rem;
+                padding: .5rem;
+                font-size: .85rem;
                 vertical-align: middle;
-                margin-right: .5rem;
+                margin-right: .25rem;
             }
 
             span{
                 vertical-align: middle;
-                font-size: 0.75rem;
+                font-size: 0.65rem;
             }
         }
 
         .playlist-list{
-            margin-top: 1.5rem;
+            margin-top: .85rem;
         }
     }
 
@@ -282,7 +280,7 @@ section:not(#menu){
         a{
             text-decoration: none;
             color: var(--spo-light);
-            font-size: .75rem;
+            font-size: .7rem;
             margin-right: 1rem;
             border: 1px solid white;
             padding: .75rem 2rem;
@@ -351,4 +349,4 @@ section:not(#menu){
     }
 }
 
-/* #region media query */
+/* #endregion media query */

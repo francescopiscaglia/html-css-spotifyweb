@@ -11,7 +11,9 @@
 /* #endregion color palette */
 
 /* #region utilities */
-
+.debug *{
+    border: 1px dashed;
+}
 /* #endregion utilities */
 
 /* #region main */
@@ -21,11 +23,17 @@
 
 .top{
     background-color: violet;
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
 }
 
 .bottom{
     background-color: greenyellow;
-    height: 80px;
+    height: 90px;
+}
+
+.sidebar{
+    background-color: aliceblue;
+    width: 230px;
+    height: 100%;
 }
 /* #endregion main */

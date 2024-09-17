@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -24,6 +28,7 @@ section{
     --spo-lighter: #ffffff;
     --spo-secondary: #7c7e83;
     --spo-footer-bg: #282828;
+    --spo-sidebar-text: #a3a3a3;
 }
 /* #endregion color palette */
 
@@ -34,6 +39,11 @@ section{
 
 .container{
     width: 97%;
+    margin: auto;
+}
+
+.container-sidebar{
+    width: 80%;
     margin: auto;
 }
 
@@ -71,9 +81,42 @@ section{
 .sidebar{
     width: 230px;
     background-color: var(--spo-bg-sidebar);
+    
 
     @media (max-width:600px) {
         width: 50px;
+    }
+
+    .logo{
+        margin-top: 1rem;
+
+        img{
+            width: 80%;
+        }
+    }
+
+    #navbar{
+        color: var(--spo-sidebar-text);
+        margin-top: 1.5rem;
+
+        ul{
+            list-style: none;
+
+            li{
+                padding-bottom: 1.25rem;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--spo-sidebar-text);
+            font-size: 1rem;
+
+            i{
+                font-size: 1.25rem;
+                margin-right: .5rem;
+            }
+        }
     }
 }
 

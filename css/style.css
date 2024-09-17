@@ -1,5 +1,31 @@
+/* #region common */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* #endregion common */
+
+/* #region color palette */
+
+/* #endregion color palette */
+
+/* #region utilities */
+
+/* #endregion utilities */
+
+/* #region main */
+#app-main{
+    height: 100vh;
+}
+
+.top{
+    background-color: violet;
+    height: calc(100% - 80px);
+}
+
+.bottom{
+    background-color: greenyellow;
+    height: 80px;
+}
+/* #endregion main */

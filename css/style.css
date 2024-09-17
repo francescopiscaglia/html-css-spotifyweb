@@ -81,10 +81,33 @@ section{
 .sidebar{
     width: 230px;
     background-color: var(--spo-bg-sidebar);
-    
+    color: var(--spo-sidebar-text);
 
     @media (max-width:600px) {
         width: 50px;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            padding-bottom: 1.25rem;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--spo-sidebar-text);
+        font-size: .85rem;
+
+        i{
+            font-size: 1.25rem;
+            margin-right: .5rem;
+
+            @media (max-width:600px) {
+                margin: 0;
+            }
+        }
     }
 
     .logo-big{
@@ -114,35 +137,10 @@ section{
     }
 
     #navbar{
-        color: var(--spo-sidebar-text);
         margin-top: 1.5rem;
 
         @media (max-width:600px) {
             text-align: center;
-        }
-        
-
-        ul{
-            list-style: none;
-
-            li{
-                padding-bottom: 1.25rem;
-            }
-        }
-
-        a{
-            text-decoration: none;
-            color: var(--spo-sidebar-text);
-            font-size: 1rem;
-
-            i{
-                font-size: 1.25rem;
-                margin-right: .5rem;
-
-                @media (max-width:600px) {
-                    margin: 0;
-                }
-            }
         }
 
         span{
@@ -153,6 +151,41 @@ section{
         }
 
 
+    }
+
+    .new-playlist{
+        margin-top: 1rem;
+
+        @media (max-width:600px) {
+            display: none;
+        }
+
+        h4{
+            font-size: .9rem;
+            color: var(--spo-lighter);
+        }
+
+        .new{
+            margin-top: 1rem;
+
+            i{
+                background-color: var(--spo-sidebar-text);
+                color: var(--spo-bg-sidebar);
+                padding: .65rem;
+                font-size: 1.25rem;
+                vertical-align: middle;
+                margin-right: .5rem;
+            }
+
+            span{
+                vertical-align: middle;
+                font-size: 0.9rem;
+            }
+        }
+
+        .playlist-list{
+            margin-top: 1.5rem;
+        }
     }
 }
 

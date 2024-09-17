@@ -18,6 +18,25 @@ body{
 .debug *{
     border: 1px dashed;
 }
+
+.container{
+    width: 97%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-2{
+    width: calc((100% / 12) * 2);
+}
+
+[class^="col-"]{
+    padding: 1rem;
+}
 /* #endregion utilities */
 
 /* #region main */
@@ -52,10 +71,16 @@ body{
         width: calc(100% - 50px);
     }
 
-    .upgrade{
+    #upgrade{
         height: 90px;
         background-color: aquamarine;
         text-align: end;
     }
+
+    #menu{
+        background-color: goldenrod;
+        text-align: center;
+    }
+
 }
 /* #endregion main */

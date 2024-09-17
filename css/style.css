@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* #endregion common */
 
 /* #region color palette */
@@ -46,6 +50,12 @@
 
     @media (max-width:600px) {
         width: calc(100% - 50px);
+    }
+
+    .upgrade{
+        height: 90px;
+        background-color: aquamarine;
+        text-align: end;
     }
 }
 /* #endregion main */

@@ -531,6 +531,14 @@ section:not(#menu, #upgrade){
             }
             
         }
+
+        .like:hover i{
+            color: var(--spo-lighter);
+        }
+
+        .save:hover i{
+            color: var(--spo-lighter);
+        }
     }
 }
 /* #endregion main */

@@ -571,6 +571,11 @@ section:not(#menu, #upgrade){
                 font-size: 1.75rem;
                 margin-left: 1.1rem;
                 margin-right: 1.1rem;
+                transition: all .2s ease-in-out;
+            }
+    
+            i:hover{
+                transform: scale(1.3);
             }
         }
     }

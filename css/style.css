@@ -14,7 +14,7 @@ body{
 }
 
 section:not(#menu){
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 0rem 0rem;
 }
 /* #endregion common */
 
@@ -329,12 +329,30 @@ section:not(#menu){
     }
 
     #recently-played{
-        padding: 1.5rem 0;
-     
-        h2, h4{
-            color: var(--spo-lighter);
-        }
+        padding: 1.5rem 0 0 0;
+    } 
+
+    h2, h4{
+        color: var(--spo-lighter);
+    }
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    h4{
+        font-size: .75rem;
+    }
+
+    h5{
+        color: var(--spo-secondary);
+        font-size: .65rem;
+        margin-bottom: .75rem;
+    }
     
+
+    .row{
+
         .thumbnail{
             position: relative;
             
@@ -356,21 +374,16 @@ section:not(#menu){
         .thumbnail:hover img{
             opacity: 0.5;
         }
-
+    
         .card-info{
             text-align: center;
-
-            h5{
-                color: var(--spo-secondary);
-            }
             
             h4, h5{
                 margin-top: .5rem;
             }
-
-        }
-
+        }  
     }
+     
 }
 /* #endregion main */
 

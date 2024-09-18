@@ -340,8 +340,12 @@ section:not(#menu){
 
             h5{
                 color: var(--spo-secondary);
+            }
+            
+            h4, h5{
                 margin-top: .5rem;
             }
+
         }
 
     }

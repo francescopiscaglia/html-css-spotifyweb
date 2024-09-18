@@ -623,6 +623,15 @@ section:not(#menu, #upgrade){
                     width: 20%;
                     height: 2px;
                     border-radius: 1rem;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+
+                    i{
+                        border: transparent;
+                        font-size: .75rem;
+                        display: none;
+                    }
                 }
 
             }
@@ -631,6 +640,10 @@ section:not(#menu, #upgrade){
 
         .song-bar:hover .progression{
             background-color: var(--spo-border-hover);
+        }
+
+        .song-bar:hover .progression i{
+            display: block;
         }
     }
 

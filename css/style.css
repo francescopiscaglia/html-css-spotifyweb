@@ -94,7 +94,7 @@ section:not(#menu){
     width: 230px;
     background-color: var(--spo-bg-sidebar);
     color: var(--spo-sidebar-text);
-    position: relative;
+    overflow-y: auto;
 
     @media (max-width:600px) {
         width: 50px;
@@ -214,8 +214,8 @@ section:not(#menu){
     }
 
     .profile{
-        position: absolute;
-        bottom: .5rem;
+        position: relative;
+        top: 20.5rem;
         width: 100%;
 
         @media (max-width:600px) {

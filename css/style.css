@@ -544,15 +544,33 @@ section:not(#menu, #upgrade){
     .middle-player{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        padding-top: 1rem;
+        text-align: center; 
+        align-items: center;    
+
+        .player-commands, .duration{
+            height: 50%;
+        }
 
         .player-commands{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+
+            @media (max-width:1100px) {
+                width: 70%;
+            }
 
             i{
                 color: var(--spo-lighter);
+                
+            }
+
+            .fa-circle-play{
+                font-size: 1.75rem;
+                margin-left: 1.1rem;
+                margin-right: 1.1rem;
             }
         }
     }
@@ -593,8 +611,12 @@ section:not(#menu, #upgrade){
         margin: auto;
     }
 
-    .col-3, .col-6{
+    .col-3{
         padding: 0.5rem;
+    }
+
+    .col-6{
+        padding: 0;
     }
 }
 

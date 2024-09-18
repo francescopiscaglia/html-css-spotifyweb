@@ -540,7 +540,24 @@ section:not(#menu, #upgrade){
             color: var(--spo-lighter);
         }
     }
+
+    .middle-player{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+
+        .player-commands{
+            display: flex;
+            justify-content: space-around;
+
+            i{
+                color: var(--spo-lighter);
+            }
+        }
+    }
 }
+
 /* #endregion main */
 
 /* #region media query */

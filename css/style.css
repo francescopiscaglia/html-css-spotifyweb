@@ -31,6 +31,8 @@ section:not(#menu, #upgrade){
     --spo-border-hover: #adff2f;
     --spo-footer-text: #828282;
     --spo-progress: #5a5a5a;
+    --spo-bar: #c1c1c1;
+    --spo-footer-text-light: #f9f9f9;
 }
 /* #endregion color palette */
 
@@ -85,6 +87,10 @@ section:not(#menu, #upgrade){
 
 .col-6{
     width: calc((100% / 12) * 6);
+}
+
+.col-8{
+    width: calc((100% / 12) * 8);
 }
 
 [class^="col-"]{
@@ -504,7 +510,7 @@ section:not(#menu, #upgrade){
         .single-info{
 
             h4{
-                color: var(--spo-lighter);
+                color: var(--spo-footer-text-light);
                 font-weight: bold;
                 font-size: .85rem;
                 line-height: .5rem;
@@ -564,7 +570,7 @@ section:not(#menu, #upgrade){
             }
 
             i{
-                color: var(--spo-lighter);
+                color: var(--spo-footer-text-light);
                 
             }
 
@@ -581,16 +587,32 @@ section:not(#menu, #upgrade){
         }
 
         .duration{
+            padding-top: 1rem;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            .col-2, .col-8{
+                padding: 0;
+            }
+
+            span{
+                color: var(--spo-footer-text-light);
+                font-size: .5rem;
+                vertical-align: middle;
+            }
 
             .song-bar{
                 background-color: var(--spo-progress);
-                border-radius: 13px;
-                height: 30px;
+                border-radius: 1rem;
+                height: 3px;
+                vertical-align: middle;
                 
                 .progression{
-                    background-color: red;
-                    width: 40%;
-                    height: 30px;
+                    background-color: var(--spo-bar);
+                    width: 20%;
+                    height: 2px;
                     border-radius: 1rem;
                 }
             }

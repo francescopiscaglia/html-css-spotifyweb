@@ -94,7 +94,9 @@ section:not(#menu){
     width: 230px;
     background-color: var(--spo-bg-sidebar);
     color: var(--spo-sidebar-text);
+    position: relative;
     overflow-y: auto;
+    overflow-x: hidden;
 
     @media (max-width:600px) {
         width: 50px;
@@ -214,12 +216,14 @@ section:not(#menu){
     }
 
     .profile{
-        position: relative;
-        top: 20.5rem;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        margin-top: 12rem;
 
         @media (max-width:600px) {
             text-align: center;
+            margin-top: 29.5rem;
         }
 
         i, span{

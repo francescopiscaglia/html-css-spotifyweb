@@ -334,6 +334,28 @@ section:not(#menu){
         h2, h4{
             color: var(--spo-lighter);
         }
+    
+        .thumbnail{
+            position: relative;
+            
+            .play-icon{
+                color: var(--spo-lighter);
+                font-size: 3rem;
+                position: absolute;
+                top: 35%;
+                right: 35%;
+                z-index: 20;
+                display: none;
+            }
+        }
+        
+        .thumbnail:hover .play-icon{
+            display: inline-block;
+        }
+        
+        .thumbnail:hover img{
+            opacity: 0.5;
+        }
 
         .card-info{
             text-align: center;

@@ -74,6 +74,10 @@ section:not(#menu, #upgrade){
     width: calc((100% / 12) * 2);
 }
 
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+
 .col-4{
     width: calc((100% / 12) * 4);
 }
@@ -108,6 +112,10 @@ section:not(#menu, #upgrade){
 
 .fw-wrap{
     flex-wrap: wrap;
+}
+
+.fw-nowrap{
+    flex-wrap: nowrap;
 }
 
 .fd-column{
@@ -442,6 +450,7 @@ section:not(#menu, #upgrade){
     .row{
         height: 100%;
         margin: 0;
+        justify-content: space-between;
     }
 
     .left-player{
@@ -450,19 +459,45 @@ section:not(#menu, #upgrade){
         position: relative;
 
         img{
-            width: 15%;        
+            width: 25%;        
             float: left;
-            margin-right: 1rem;
-        }
+            margin-right: .5rem;
 
-        span{
-            display: inline-flex;
-            
+            @media (max-width:800px) {
+                width: 25%;
+            }
+
+            @media (max-width:600px) {
+                width: 35%;
+            }
         }
 
         .single{
             display: flex;
             align-items: center;
+        }
+
+        .action{
+            display: flex;
+            margin-right: 3rem;
+
+            @media (max-width:800px) {
+                flex-direction: column;
+                font-size: 1rem;
+                margin-right: 0;
+            }
+
+            @media (max-width:600px) {
+                font-size: .75rem;
+            }
+
+            .like{
+                margin-right: 1rem;
+            }
+
+            i{
+                color: var(--spo-footer-text);
+            }
         }
 
         .single-info{
@@ -471,12 +506,30 @@ section:not(#menu, #upgrade){
                 color: var(--spo-lighter);
                 font-weight: bold;
                 font-size: .85rem;
+                line-height: .5rem;
+
+                @media (max-width:800px) {
+                    font-size: .75rem;
+                }
+
+                @media (max-width:600px) {
+                    
+                }
             }
 
             span{
                 color: var(--spo-footer-text);
                 font-size: .65rem;
+
+                @media (max-width:800px) {
+                    font-size: .6rem;
+                }
+
+                @media (max-width:600px) {
+                    
+                }
             }
+            
         }
     }
 }
@@ -513,6 +566,10 @@ section:not(#menu, #upgrade){
     .container-xs-menu{
         width: 90%;
         margin: auto;
+    }
+
+    .col-3, .col-6{
+        padding: 0.5rem;
     }
 }
 

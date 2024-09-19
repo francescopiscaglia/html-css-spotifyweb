@@ -145,6 +145,10 @@ section:not(#menu, #upgrade){
     padding-top: .5rem;
 }
 
+.p-0{
+    padding: 0;
+}
+
 .h100{
     height: 100%;
 }
@@ -535,7 +539,7 @@ section:not(#menu, #upgrade){
             }
 
             @media (max-width:600px) {
-                width: 35%;
+                width: 25%;
             }
         }
 
@@ -547,9 +551,9 @@ section:not(#menu, #upgrade){
         .action{
             display: flex;
             margin-right: 3rem;
+            flex-direction: column;
 
             @media (max-width:800px) {
-                flex-direction: column;
                 font-size: 1rem;
                 margin-right: 0;
             }
@@ -622,17 +626,19 @@ section:not(#menu, #upgrade){
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            width: 50%;
+            width: 30%;
             margin: 0 auto;
+
+            @media (max-width:1100px) {
+                width: 50%;
+            }
 
             @media (max-width:600px) {
                 padding-top: .5rem;
                 font-size: .75rem;
+                width: 80%;
             }
 
-            @media (max-width:1100px) {
-                width: 70%;
-            }
 
             i{
                 color: var(--spo-footer-text-light);
@@ -641,8 +647,8 @@ section:not(#menu, #upgrade){
 
             .fa-circle-play{
                 font-size: 1.75rem;
-                margin-left: 1.1rem;
-                margin-right: 1.1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 transition: all .2s ease-in-out;
 
                 @media (max-width:800px) {
@@ -669,14 +675,10 @@ section:not(#menu, #upgrade){
                 padding-bottom: .5rem;
             }
 
-            .col-2, .col-8{
-                padding: 0;
-            }
-
             span{
                 color: var(--spo-footer-text-light);
                 font-size: .5rem;
-                vertical-align: middle;
+                line-height: 2rem;
 
                 @media (max-width:600px) {
                     font-size: .45rem;
@@ -731,11 +733,7 @@ section:not(#menu, #upgrade){
 
         i{
             color: var(--spo-footer-text-light);
-            font-size: .85rem;
-
-            @media (max-width:600px) {
-                font-size: .75rem;
-            }
+            font-size: .75rem;
         }
 
         .full-bar{

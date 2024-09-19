@@ -223,25 +223,22 @@ section:not(#menu, #upgrade){
         }
 
         a{
-            display: table-cell;
-        
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
             img{
-                width: 1rem;
-                margin-right: .75rem;
+                width: 1.25rem;
             }
+
+            span{
     
-            img, span{
-                vertical-align: middle;
+                @media (max-width:600px) {
+                    display: none;
+                }
             }
         }
 
-
-        span{
-
-            @media (max-width:600px) {
-                display: none;
-            }
-        }
         
         #home{
             color: var(--spo-lighter);
@@ -313,12 +310,15 @@ section:not(#menu, #upgrade){
                 }
             }
 
-            img{
-                width: 1rem;
-            }
-
             span{
                 line-height: 1rem;
+            }
+        }
+
+        .install{
+
+            img{
+                width: .75rem;
             }
         }
 

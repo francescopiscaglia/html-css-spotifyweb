@@ -287,9 +287,22 @@ section:not(#menu, #upgrade){
             text-align: center; 
         }
 
-        i, span{
-            vertical-align: middle;
+        .install{
+
+            a{
+                display: table-cell;
+                gap: .5rem;
+            }
+
+            img{
+                width: 1rem;
+            }
+
+            img, span{
+                vertical-align: middle;
+            }
         }
+
 
         i{
             font-size: .75rem;

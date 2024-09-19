@@ -432,7 +432,7 @@ section:not(#menu, #upgrade){
             
             .play-icon{
                 color: var(--spo-lighter);
-                font-size: 3rem;
+                font-size: 2rem;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -585,6 +585,7 @@ section:not(#menu, #upgrade){
 
             @media (max-width:600px) {
                 padding-top: .5rem;
+                font-size: .75rem;
             }
 
             @media (max-width:1100px) {
@@ -605,6 +606,7 @@ section:not(#menu, #upgrade){
                 @media (max-width:600px) {
                     margin-left: .25rem;
                     margin-right: .25rem;
+                    font-size: 1.25rem;
                 }
             }
     
@@ -633,6 +635,11 @@ section:not(#menu, #upgrade){
                 color: var(--spo-footer-text-light);
                 font-size: .5rem;
                 vertical-align: middle;
+
+                @media (max-width:600px) {
+                    font-size: .45rem;
+            
+                }
             }
 
             .song-bar{
@@ -682,6 +689,11 @@ section:not(#menu, #upgrade){
 
         i{
             color: var(--spo-footer-text-light);
+            font-size: .85rem;
+
+            @media (max-width:600px) {
+                font-size: .75rem;
+            }
         }
 
         .full-bar{

@@ -160,8 +160,7 @@ section:not(#menu, #upgrade){
     background-color: var(--spo-bg-sidebar);
     color: var(--spo-sidebar-text);
     position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media (max-width:600px) {
         width: 50px;
@@ -603,7 +602,7 @@ section:not(#menu, #upgrade){
                 margin-right: 1.1rem;
                 transition: all .2s ease-in-out;
 
-                @media (max-width:600px) {
+                @media (max-width:800px) {
                     margin-left: .25rem;
                     margin-right: .25rem;
                     font-size: 1.25rem;

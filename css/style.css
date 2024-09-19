@@ -42,12 +42,12 @@ section:not(#menu, #upgrade){
 }
 
 .top{
-    height: calc(100% - 90px);
+    height: calc(100% - 80px);
     display: flex;
 }
 
 .bottom{
-    height: 90px;
+    height: 80px;
     background-color: var(--spo-footer-bg);
 }
 
@@ -337,11 +337,14 @@ section:not(#menu, #upgrade){
     }
 
     #upgrade{
-        height: 90px;
+        height: 80px;
         background-color: var(--spo-bg-secondary);
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
 
 
         a{

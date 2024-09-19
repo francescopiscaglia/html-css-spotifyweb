@@ -719,6 +719,14 @@ section:not(#menu, #upgrade){
             }
 
         }
+
+        .full-bar:hover .level-bar{
+            background-color: var(--spo-border-hover);
+        }
+
+        .full-bar:hover .level-bar i{
+            display: block;
+        }
     }
 
 }

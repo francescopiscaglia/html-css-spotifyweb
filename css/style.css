@@ -321,6 +321,10 @@ section:not(#menu, #upgrade){
                 display: none;
             }
         }
+
+        .install:hover span{
+            color: var(--spo-lighter);
+        }
     }
 
 }

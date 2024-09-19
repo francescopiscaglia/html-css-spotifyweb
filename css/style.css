@@ -431,8 +431,9 @@ section:not(#menu, #upgrade){
                 color: var(--spo-lighter);
                 font-size: 3rem;
                 position: absolute;
-                top: 35%;
-                right: 35%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 z-index: 20;
                 display: none;
             }
@@ -453,6 +454,16 @@ section:not(#menu, #upgrade){
                 margin-top: .5rem;
             }
         }  
+    }
+
+    #popular-album{
+        .thumbnail{
+
+            img{
+                border-radius: 50%;
+
+            }
+        }
     }
      
 }
